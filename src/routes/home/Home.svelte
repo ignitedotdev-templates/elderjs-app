@@ -9,6 +9,8 @@
     ...hook,
     link: helpers.permalinks.hooks({ slug: hook.hook.toLocaleLowerCase() }),
   }));
+
+  const port = process.env.SERVER_PORT || 3000;
 </script>
 
 <style>
@@ -87,6 +89,7 @@
 
 <div class="banner">
   <h1>Hello World: Welcome to Elder.js!</h1>
+  <h3>{port} is gotten from env</h3>
   <p>Woot! You've got Elder.js installed. This template is designed to show you the ropes of how things work.</p>
 
   <p>
